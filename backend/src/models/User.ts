@@ -4,9 +4,9 @@ export interface IUser extends Document {
   clerkId: string;
   name: string;
   email: string;
-  avatar?: string;
+  avatar: string;
   createdAt: Date;
-  updateAt: Date;
+  updatedAt: Date;
 }
 
 const UserScheme = new Schema<IUser>(
